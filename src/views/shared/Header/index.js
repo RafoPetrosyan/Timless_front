@@ -1,36 +1,69 @@
 import React from "react";
-import {Dropdown, Space} from "antd";
+import {Dropdown, Popover, Space} from "antd";
 import {v4 as uniqueId} from "uuid";
-import {NavLink} from "react-router-dom";
-import {DownOutlined} from "@ant-design/icons";
+import {Link, NavLink} from "react-router-dom";
+import {CloseOutlined, MenuOutlined} from "@ant-design/icons";
 
+import Porch from "assets/svg/Porch";
+import Timeless from "assets/svg/Timeless";
 import useContainer from "./hook";
 import 'antd/dist/antd.min.css';
 import "./style.scss";
+import MobileMenu from "views/shared/Header/MobileMenu";
 
 const Header = () => {
-    const {menuItems, dropDownMenu, pathname} = useContainer();
+    const { menuItems, dropDownMenu, pathname, dropDownVisible, handleDropDownOpen, onMenuOpenChange, mobileMenuVisible } = useContainer();
 
     return (
-        <div className="header">
-            {menuItems.map(item => (Boolean(item.children.length) ?
-                    <Dropdown
-                        menu={{items: dropDownMenu(item?.children)}}
-                        key={uniqueId()}
-                        className={pathname === item.to ? "activeNavLink" : "navLink"}
+        <>
+            <div className="header">
+                <div className='content'>
+                    <div className='iconDiv'>
+                        <Timeless width={135} height={71} />
+                    </div>
+                    <div className='navLinks'>
+                        {menuItems.map(item => (Boolean(item.children.length) ?
+                                <Dropdown
+                                    onOpenChange={(e) => handleDropDownOpen(e, item.name)}
+                                    open={dropDownVisible?.[item.name] || false}
+                                    menu={{items: dropDownMenu(item?.children)}}
+                                    key={uniqueId()}
+                                    className={pathname === item.to ? "activeNavLink" : "navLink"}
+                                >
+                                    <div className="navLinkItem">
+                                        <NavLink to={item.to} className={({isActive}) => isActive ? 'activeNavLink' : 'navLink' }>
+                                            {item.name}
+                                            <Porch fill="white" deg={180} width={21} height={38} />
+                                        </NavLink>
+                                        <div className={pathname === item.to || dropDownVisible?.[item.name] ? 'borderBottomActive' : 'borderBottom'}/>
+                                    </div>
+                                </Dropdown> :
+                                <div className="navLinkItem" key={uniqueId()}>
+                                    <NavLink to={item.to} className={({isActive}) => isActive ? 'activeNavLink' : 'navLink' }>
+                                        <Space>
+                                            {item.name}
+                                        </Space>
+                                    </NavLink>
+                                    <div className={pathname === item.to ? 'borderBottomActive' : 'borderBottom'}/>
+                                </div>
+                        ))}
+                    </div>
+                    <div className="searchInput"></div>
+                </div>
+                <div className="mobileMenu">
+                    <Link to='/'>
+                        <Timeless width={70} height={37} fill='red' />
+                    </Link>
+                    <Popover placement="bottom" trigger="click" open={mobileMenuVisible}
+                             content={<MobileMenu menuItems={menuItems} />}
                     >
-                        <NavLink to={item.to} className={({isActive}) => isActive ? 'activeNavLink' : 'navLink' }>
-                                {item.name}
-                                <DownOutlined />
-                        </NavLink>
-                    </Dropdown> :
-                    <NavLink to={item.to} className={({isActive}) => isActive ? 'activeNavLink' : 'navLink' } key={uniqueId()}>
-                        <Space>
-                            {item.name}
-                        </Space>
-                    </NavLink>
-            ))}
-        </div>
+                        {mobileMenuVisible ?
+                            <CloseOutlined className="mobileMenuIcon" onClick={onMenuOpenChange} /> :
+                            <MenuOutlined className="mobileMenuIcon" onClick={onMenuOpenChange} />}
+                    </Popover>
+                </div>
+            </div>
+        </>
     )
 };
 

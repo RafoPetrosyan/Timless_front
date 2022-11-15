@@ -1,10 +1,13 @@
 import {Link, useLocation} from "react-router-dom";
+import {useCallback, useEffect, useState} from "react";
+import useWindowDimensions from "hooks/useWindowDimensions";
 
 const servicesInfo = [
     {
         id: 1,
         parent_id: null,
         title: "ROOFING",
+        type: 'SERVICES',
         children: [
             {
                 id: 1_1,
@@ -179,6 +182,9 @@ const galleryInfo = [
 
 function useContainer() {
     const {pathname} = useLocation();
+    const [dropDownVisible, setDropDownVisible] = useState({});
+    const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+    const { width: deviceWidth } = useWindowDimensions();
 
     const menuItems = [
         {name: 'HOME', to: '/', children: []},
@@ -193,18 +199,38 @@ function useContainer() {
             item = {
                 ...item,
                 key: item.id,
-                label: <Link to={`category/${item.id}`}>{item.title}</Link>,
+                label: <Link className='dropDownLabel' to={`category/${item.id}`}>{item.title}</Link>,
                 children: Boolean(item.children.length) ? dropDownMenu(item.children) : null,
             }
             return item
         });
     };
 
+    const handleDropDownOpen = (e, name) => {
+        setDropDownVisible(prev => ({...prev, [name]: e}));
+    }
+
+    const onMenuOpenChange = useCallback(() => {
+        setMobileMenuVisible(prev => !prev)
+    }, [mobileMenuVisible]);
+
+    const closeMobileMenu = () => {
+      if(+deviceWidth > 1024) {
+          setMobileMenuVisible(false)
+      }
+    };
+
+    useEffect(closeMobileMenu, [deviceWidth]);
+
     return {
         menuItems,
         dropDownMenu,
         servicesInfo,
         pathname,
+        handleDropDownOpen,
+        dropDownVisible,
+        mobileMenuVisible,
+        onMenuOpenChange,
     }
 }
 
