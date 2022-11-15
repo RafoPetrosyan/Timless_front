@@ -1,3 +1,4 @@
+import React from "react";
 import FbIcon from "assets/svg/FbIcon";
 import Yelp from "assets/svg/Yelp";
 import Houzz from "assets/svg/Houzz";
@@ -6,15 +7,8 @@ import Instagram from "assets/svg/Instagram";
 import Twitter from "assets/svg/Twitter";
 import TikTok from "assets/svg/Tiktok";
 import Pinterest from "assets/svg/Pinterest";
-import React from "react";
 
 function useContainer() {
-    const contentStyle = {
-        color: '#fff',
-        textAlign: 'center',
-        background: '#707070',
-    };
-
     const socialIcons = {
         fb: <FbIcon width={25} height={25} fill={'#707070'} className='icon' />,
         yelp: <Yelp width={25} height={25} fill={'#707070'} className='icon' />,
@@ -27,9 +21,8 @@ function useContainer() {
     }
 
     return {
-        contentStyle,
         socialIcons,
     }
-};
+}
 
 export default useContainer;

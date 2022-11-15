@@ -6,7 +6,7 @@
     position: absolute;
     width: 100%;
     height: 100px;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: center;
     .socialContent {
@@ -29,6 +29,37 @@
     .carouselItem {
       width: 100%;
       height: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .informationDiv {
+        top: 150px;
+        left: 0;
+        bottom: 100px;
+        right: 0;
+        margin: auto;
+        width: 670px;
+        z-index: 1;
+        border: 1px solid red;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          margin-top: 50px;
+          color: white;
+          text-align: center;
+        }
+        .estimateButton {
+          background-color: #00000054;
+          color: white;
+          margin-top: 50px;
+          width: 237px;
+          height: 51px;
+          border: 2px solid white;
+          border-radius: 20px;
+        }
+      }
     }
   }
 }
