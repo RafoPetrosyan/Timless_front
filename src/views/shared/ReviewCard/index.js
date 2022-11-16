@@ -3,9 +3,8 @@ import {Rate} from "antd";
 import UserAvatar from "views/shared/UserAvatar";
 import Quotes from "assets/svg/Quotes";
 import Star from "assets/svg/Star";
-import "./style.scss";
-import Porch from "../../../assets/svg/Porch";
 import Stars from "assets/svg/Star.svg"
+import "./style.scss";
 
 const ReviewCard = ({text, user, rate, date}) => {
     return (
@@ -30,7 +29,14 @@ const ReviewCard = ({text, user, rate, date}) => {
                     </a>
                 </div>
                 <div className='rateContent'>
-                    <Rate allowHalf defaultValue={2} style={{ color: '#d5ad5d' }} charactor={<Stars />} />
+                    <Rate allowHalf defaultValue={2.5} style={{ color: '#d5ad5d' }} disabled />
+                    {/*<Rate*/}
+                    {/*    // allowHalf*/}
+                    {/*    allowHalf*/}
+                    {/*    defaultValue={2}*/}
+                    {/*    style={{ color: '#d5ad5d' }}*/}
+                    {/*    // character={<Star fill='#d5ad5d' width={12} height={12} />}*/}
+                    {/* />*/}
                 </div>
             </div>
         </div>
@@ -38,5 +44,4 @@ const ReviewCard = ({text, user, rate, date}) => {
 };
 
 export default ReviewCard;
-
 // character={<Star fill='#d5ad5d' width={12} height={12} />}

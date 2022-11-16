@@ -3,6 +3,7 @@ function Star(props) {
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 122.21 110.98"
+            fill="red"
             {...props}
         >
             <g data-name="\u0421\u043B\u043E\u0439 2">
