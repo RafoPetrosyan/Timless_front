@@ -14,7 +14,7 @@ code {
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open-Sans";
   src: local("OpenSans"),
-  url("assets/fonts/OpenSans/OpenSans-VariableFont_wdth,wght.ttf");
+  url("assets/fonts/OpenSans/OpenSans-Regular.ttf");
 }

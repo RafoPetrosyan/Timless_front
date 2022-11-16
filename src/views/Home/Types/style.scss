@@ -1,0 +1,104 @@
+.types {
+  width: 100%;
+  height: 684px;
+  position: relative;
+  .carousel {
+    width: 100%;
+    height: 100%;
+    .carouselItem {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .informationDiv {
+      position: absolute;
+      max-width: 1024px;
+      top: 88px;
+      right: 0;
+      left: 0;
+      bottom: 60px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      .iconDiv {
+        height: 195px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+          letter-spacing: 4px;
+          font-size: 52px;
+          color: rgba(207, 164, 84, 1);
+          font-weight: bold;
+          font-family: Open-Sans;
+        }
+      }
+      .text {
+        margin-top: 20px;
+        color: white;
+        font-size: 25px;
+        line-height: 1.5;
+        text-align: center;
+      }
+      .button {
+        margin-top: 20px;
+        background-color: white;
+        width: 200px;
+        height: 50px;
+        border-radius: 32px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: Open-Sans;
+      }
+    }
+  }
+  .line {
+    position: absolute;
+    width: 1136px;
+    height: 5px;
+    background-color: #d0a64e;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+  }
+  .ant-carousel .slick-dots-bottom {
+    bottom: 20px;
+  }
+  .ant-carousel .slick-slide img {
+    width: 100%;
+    //height: 808px;
+    //min-height: 653px;
+    //max-height: 808px;
+    height: 684px;
+  }
+  .ant-carousel {
+    height: 100%;
+  }
+  .ant-carousel .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .ant-carousel .slick-dots li.slick-active{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #707070;
+    border: 2px solid white;
+  }
+  .ant-carousel .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .ant-carousel .slick-dots li.slick-active button {
+    opacity: 0;
+  }
+}
