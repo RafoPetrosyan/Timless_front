@@ -16,6 +16,7 @@ const Reviews = () => {
             },
             text: 'My roof was leaking, and it was important for me to find any roofing company with a good…',
             rate: 5,
+            date: '5 months ago',
         },
         {
             id: uniqueId(),
@@ -25,6 +26,7 @@ const Reviews = () => {
             },
             text: 'My roof was leaking, and it was important for me to find any roofing company with a good…',
             rate: 5,
+            date: '5 months ago',
         },
         {
             id: uniqueId(),
@@ -34,6 +36,7 @@ const Reviews = () => {
             },
             text: 'My roof was leaking, and it was important for me to find any roofing company with a good…',
             rate: 5,
+            date: '5 months ago',
         },
         {
             id: uniqueId(),
@@ -44,6 +47,7 @@ const Reviews = () => {
             },
             text: 'My roof was leaking, and it was important for me to find any roofing company with a good…',
             rate: 5,
+            date: '5 months ago',
         },
     ];
 

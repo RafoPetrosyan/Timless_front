@@ -1,15 +1,54 @@
 .reviewCard {
   width: 543px;
   height: 323px;
-  border: 1px solid red;
   background-color: white;
   border-radius: 35px;
   margin-bottom: 30px;
-  .topContent {
-    width: 387px;
-    height: 85px;
-    border: 1px solid cyan;
+  .content {
     margin-top: 57px;
     margin-left: 86px;
+    width: 387px;
+    display: flex;
+    flex-direction: column;
+    .topContent {
+      height: 94px;
+      display: flex;
+      .avatar {
+        margin-top: 9px;
+      }
+      .nameDiv {
+        margin-top: 12px;
+        margin-left: 10px;
+        .name {
+          font-size: 22px;
+          margin-bottom: 0;
+        }
+        .date {
+          font-size: 18px;
+        }
+      }
+    }
+    .textContent {
+      margin-top: 10px;
+      .text {
+        font-size: 18px;
+      }
+    }
+    .readMoreDiv {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .readMore {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    .rateContent {
+      border: 1px solid red;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
   }
 }
