@@ -52,16 +52,13 @@ const Header = () => {
                 </div>
                 <div className="mobileMenu">
                     <Link to='/'>
-                        <Timeless width={70} height={37} fill='red' />
+                        <Timeless width={70} height={37} fill="#FFCC59" />
                     </Link>
-                    <Popover placement="bottom" trigger="click" open={mobileMenuVisible}
-                             content={<MobileMenu menuItems={menuItems} />}
-                    >
                         {mobileMenuVisible ?
                             <CloseOutlined className="mobileMenuIcon" onClick={onMenuOpenChange} /> :
                             <MenuOutlined className="mobileMenuIcon" onClick={onMenuOpenChange} />}
-                    </Popover>
                 </div>
+                {mobileMenuVisible && <MobileMenu menuItems={menuItems} />}
             </div>
         </>
     )

@@ -17,8 +17,8 @@ const Estimate = () => {
                     ))}
                 </div>
             </div>
-            {/*<Carousel className='carousel'>*/}
-            <Carousel autoplay autoPlaySpeed={1000} infinite className='carousel'>
+            <Carousel className='carousel'>
+            {/*<Carousel autoplay autoPlaySpeed={1000} infinite className='carousel'>*/}
                 <div className='carouselItem'>
                     <div className='informationDiv'>
                         <h2 className='title'>BUILDING QUALITY HOMES THAT STAND THE TEST OF TIME</h2>

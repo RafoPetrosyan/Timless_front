@@ -11,7 +11,7 @@ const Introduction = () => {
         <div className="introduction">
             <div className='typesDiv'>
                 {typesIcons.map((item, index )=> (
-                    <div key={uniqueId()} className='typesItem' style={{borderRight: index > 2 ? 'none' : '1px solid #e0e0e0'}}>
+                    <div key={uniqueId()} className='typesItem'>
                         {item.icon}
                         <p className='name'>{item.name}</p>
                     </div>

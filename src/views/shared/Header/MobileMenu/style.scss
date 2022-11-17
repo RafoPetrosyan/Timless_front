@@ -1,0 +1,20 @@
+.mobileMenuVisible {
+  position: absolute;
+  z-index: 1050;
+  background: white;
+  border-radius: 2px;
+  box-shadow: none;
+  transform-origin: 0 0;
+  top: 58px;
+  width: 90%;
+  .ant-menu-title-content {
+    font-size: 22px;
+  }
+  .ant-menu-submenu-arrow, .ant-menu-submenu-expand-icon {
+    right: 100px;
+    top: 57%;
+  }
+  .ant-menu-item-selected {
+    background-color: red;
+  }
+}

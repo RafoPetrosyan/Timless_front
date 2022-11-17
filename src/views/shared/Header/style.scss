@@ -4,10 +4,12 @@
   background-color: #181818;
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 1500;
   .content {
     display: flex;
     width: 1440px;
-    justify-content: space-around;
+    justify-content: space-between;
     .iconDiv {
       display: flex;
       align-items: center;
@@ -107,7 +109,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border: 1px solid red;
     }
   }
 }
