@@ -1,0 +1,166 @@
+.footer {
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  .content {
+    margin: 67px auto 57px;
+    width: 1178px;
+    height: 215px;
+    display: flex;
+    justify-content: space-between;
+    .information {
+      width: 313px;
+      height: 100%;
+      .list {
+        list-style-type: none;
+        padding: 0;
+        .listItem {
+          margin-top: 14px;
+          .text {
+            color: #838383;
+            margin-left: 3px;
+          }
+          .text:hover {
+            color: #AF7822;
+            cursor: pointer;
+          }
+        }
+        .listItem:hover {
+          .icon {
+            fill: #AF7822;
+          }
+        }
+      }
+    }
+    .menu {
+      width: 110px;
+      height: 100%;
+      .menuList {
+        list-style-type: none;
+        padding: 0;
+        .text {
+          color: #838383;
+          font-size: 19px;
+          margin-bottom: 10px;
+        }
+        .text:hover {
+          color: #AF7822;
+          cursor: pointer;
+        }
+      }
+    }
+    .services {
+      width: 221px;
+      height: 100%;
+      .serviceName {
+        color: #838383;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .serviceName:hover {
+        cursor: pointer;
+        color: #AF7822;
+      }
+      .list {
+        color: #838383;
+        list-style-type: none;
+        padding: 0;
+        .listItem {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          .circle {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #838383;
+          }
+          .circle:hover {
+            cursor: pointer;
+            background-color: #AF7822;
+          }
+          .text {
+            margin-left: 5px;
+            font-size: 17px;
+          }
+          .text:hover {
+            cursor: pointer;
+            color: #AF7822;
+            .listItem {
+              .circle {
+                cursor: pointer;
+                background-color: #AF7822;
+              }
+            }
+          }
+        }
+      }
+    }
+    .socialContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 380px;
+      height: 100%;
+      .icons {
+        width: 274px;
+        height: 86px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        .icon {
+          margin-left: 18px;
+          margin-right: 18px;
+        }
+        .icon:hover {
+          fill: #AF7822;
+          cursor: pointer;
+        }
+      }
+      .license {
+        width: 180px;
+        height: 36px;
+        border-radius: 32px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text {
+          color: #838383;
+          margin: 0;
+        }
+      }
+      .bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .text {
+          color: #838383;
+        }
+        .text:hover {
+          cursor: pointer;
+          color: #AF7822;
+        }
+      }
+    }
+  }
+  .bottomContent {
+    border-top: 1px solid #4b412d;
+    width: 100%;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text {
+      color: #838383;
+      font-size: 18px;
+    }
+    .text:hover {
+      color: #AF7822;
+      cursor: pointer;
+    }
+  }
+}

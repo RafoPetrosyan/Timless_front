@@ -6,10 +6,10 @@ import {CloseOutlined, MenuOutlined} from "@ant-design/icons";
 
 import Porch from "assets/svg/Porch";
 import Timeless from "assets/svg/Timeless";
+import MobileMenu from "views/shared/Header/MobileMenu";
 import useContainer from "./hook";
 import 'antd/dist/antd.min.css';
 import "./style.scss";
-import MobileMenu from "views/shared/Header/MobileMenu";
 
 const Header = () => {
     const { menuItems, dropDownMenu, pathname, dropDownVisible, handleDropDownOpen, onMenuOpenChange, mobileMenuVisible } = useContainer();
@@ -19,7 +19,7 @@ const Header = () => {
             <div className="header">
                 <div className='content'>
                     <div className='iconDiv'>
-                        <Timeless width={135} height={71} />
+                        <Timeless width={135} height={71} fill="#FFCC59" />
                     </div>
                     <div className='navLinks'>
                         {menuItems.map(item => (Boolean(item.children.length) ?

@@ -1,9 +1,8 @@
 import React from "react";
-import {Rate} from "antd";
 import UserAvatar from "views/shared/UserAvatar";
 import Quotes from "assets/svg/Quotes";
-import Star from "assets/svg/Star";
-import Stars from "assets/svg/Star.svg"
+import RateStar from "views/shared/RateStar";
+import Google from "assets/svg/Google";
 import "./style.scss";
 
 const ReviewCard = ({text, user, rate, date}) => {
@@ -29,14 +28,8 @@ const ReviewCard = ({text, user, rate, date}) => {
                     </a>
                 </div>
                 <div className='rateContent'>
-                    <Rate allowHalf defaultValue={2.5} style={{ color: '#d5ad5d' }} disabled />
-                    {/*<Rate*/}
-                    {/*    // allowHalf*/}
-                    {/*    allowHalf*/}
-                    {/*    defaultValue={2}*/}
-                    {/*    style={{ color: '#d5ad5d' }}*/}
-                    {/*    // character={<Star fill='#d5ad5d' width={12} height={12} />}*/}
-                    {/* />*/}
+                    <RateStar rate={rate} size={21} activeColor='#d5ad5d' defaultColor='#d9d9d9' />
+                    <Google width={29} height={29} fill="#d9d9d9" />
                 </div>
             </div>
         </div>
@@ -44,4 +37,3 @@ const ReviewCard = ({text, user, rate, date}) => {
 };
 
 export default ReviewCard;
-// character={<Star fill='#d5ad5d' width={12} height={12} />}

@@ -1,20 +1,19 @@
 import React from "react";
 import {Carousel} from "antd";
 import estimate from "assets/images/estimate.png";
+import {SOCIAL_ICONS} from 'constants/session';
 
-import useContainer from "./hook";
 import 'antd/dist/antd.min.css';
 import "./style.scss";
 
 const Estimate = () => {
-    const { socialIcons } = useContainer();
 
     return (
         <div className="estimate">
             <div className='socialDiv'>
                 <div className="socialContent">
-                    {Object.keys(socialIcons).map(item => (
-                        <a href="#" key={item}>{socialIcons[item]}</a>
+                    {Object.keys(SOCIAL_ICONS).map(item => (
+                        <a href="#" key={item} className='icon'>{SOCIAL_ICONS[item]}</a>
                     ))}
                 </div>
             </div>

@@ -1,0 +1,38 @@
+.aboutInfoCard {
+  width: 324px;
+  height: 229px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .iconDiv {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+  }
+  .titleDiv {
+    width: 100%;
+    height: 34px;
+    margin-top: 11px;
+    display: flex;
+    justify-content: center;
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+      font-family: Open-Sans;
+    }
+  }
+  .textDiv {
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    .text {
+      font-size: 18px;
+      font-family: Open-Sans;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}

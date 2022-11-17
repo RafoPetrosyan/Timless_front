@@ -25,7 +25,7 @@ const Reviews = () => {
                 lastName: 'Mendoza',
             },
             text: 'My roof was leaking, and it was important for me to find any roofing company with a good…',
-            rate: 5,
+            rate: 2.25,
             date: '5 months ago',
         },
         {
@@ -35,7 +35,7 @@ const Reviews = () => {
                 lastName: 'Mendoza',
             },
             text: 'My roof was leaking, and it was important for me to find any roofing company with a good…',
-            rate: 5,
+            rate: 1,
             date: '5 months ago',
         },
         {
@@ -46,7 +46,7 @@ const Reviews = () => {
                 image: 'https://media.istockphoto.com/id/1356785346/photo/woman-in-coat-messaging-on-smartphone-standing-outside-in-the-city.jpg?b=1&s=170667a&w=0&k=20&c=rpODgUSWgp3YP2HmDbGf_BWprRjSUJVNtsZ-SzkvC24=',
             },
             text: 'My roof was leaking, and it was important for me to find any roofing company with a good…',
-            rate: 5,
+            rate: 4.2,
             date: '5 months ago',
         },
     ];

@@ -5,9 +5,9 @@
   border-radius: 35px;
   margin-bottom: 30px;
   .content {
-    margin-top: 57px;
-    margin-left: 86px;
-    width: 387px;
+    margin-top: 43px;
+    margin-left: 61px;
+    width: 435px;
     display: flex;
     flex-direction: column;
     .topContent {
@@ -31,7 +31,8 @@
     .textContent {
       margin-top: 10px;
       .text {
-        font-size: 18px;
+        font-size: 20px;
+        text-align: left;
       }
     }
     .readMoreDiv {
@@ -40,20 +41,16 @@
       justify-content: flex-end;
       .readMore {
         text-decoration: none;
-        color: black;
+        color: #cccccc;
+        font-weight: 500;
+        font-size: 20px;
       }
     }
     .rateContent {
-      border: 1px solid red;
       width: 100%;
       display: flex;
       justify-content: space-between;
       margin-top: 10px;
     }
   }
-  //.ant-rate-star {
-  //  .ant-rate-star-full {
-  //    color: red;
-  //  }
-  //}
 }
