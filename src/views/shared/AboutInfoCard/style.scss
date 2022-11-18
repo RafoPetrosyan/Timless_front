@@ -36,3 +36,24 @@
     }
   }
 }
+@media only screen and (max-width: 1024px) {
+  .aboutInfoCard {
+    width: 285px;
+    .titleDiv {
+      .title {
+        font-size: 22px;
+      }
+    }
+    .textDiv {
+      width: 95%;
+    }
+  }
+}
+//@media only screen and (max-width: 761px) {
+//  .aboutInfoCard {
+//    width: 285px;
+//    .textDiv {
+//      width: 95%;
+//    }
+//  }
+//}

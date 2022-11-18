@@ -28,34 +28,36 @@ const Footer = () => {
                        </li>
                    </ul>
                 </div>
-                <div className="menu">
-                    <ul className="menuList">
-                        <li className="text">HOME</li>
-                        <li className="text">GALLERY</li>
-                        <li className="text">ABOUT US</li>
-                        <li className="text">CONTACT</li>
-                    </ul>
-                </div>
-                <div className="services">
-                    <p className="serviceName">SERVICES</p>
-                    <ul className="list">
-                        <li className="listItem">
-                            <div className="circle" />
-                            <span className="text">ROOFING</span>
-                        </li>
-                        <li className="listItem">
-                            <div className="circle" />
-                            <span className="text">PLUMBING</span>
-                        </li>
-                        <li className="listItem">
-                            <div className="circle" />
-                            <span className="text">BATHROOM REMODELING</span>
-                        </li>
-                        <li className="listItem">
-                            <div className="circle" />
-                            <span className="text">KITCHEN REMODELING</span>
-                        </li>
-                    </ul>
+                <div className='menuItems'>
+                    <div className="menu">
+                        <ul className="menuList">
+                            <li className="text">HOME</li>
+                            <li className="text">GALLERY</li>
+                            <li className="text">ABOUT US</li>
+                            <li className="text">CONTACT</li>
+                        </ul>
+                    </div>
+                    <div className="services">
+                        <p className="serviceName">SERVICES</p>
+                        <ul className="list">
+                            <li className="listItem">
+                                <div className="circle" />
+                                <span className="text">ROOFING</span>
+                            </li>
+                            <li className="listItem">
+                                <div className="circle" />
+                                <span className="text">PLUMBING</span>
+                            </li>
+                            <li className="listItem">
+                                <div className="circle" />
+                                <span className="text">BATHROOM REMODELING</span>
+                            </li>
+                            <li className="listItem">
+                                <div className="circle" />
+                                <span className="text">KITCHEN REMODELING</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="socialContent">
                     <div className='icons'>

@@ -57,11 +57,11 @@
   }
   .line {
     position: absolute;
-    width: 1136px;
+    max-width: 1136px;
     height: 5px;
     background-color: #d0a64e;
-    right: 0;
-    left: 0;
+    right: 100px;
+    left: 100px;
     bottom: 0;
     margin: auto;
     z-index: 2;
@@ -100,5 +100,33 @@
   }
   .ant-carousel .slick-dots li.slick-active button {
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 761px) {
+  .types {
+    .carousel {
+      .informationDiv {
+        .iconDiv {
+          .title {
+            font-size: 41px;
+          }
+        }
+        .text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 461px) {
+  .types {
+    .carousel {
+      .informationDiv {
+        .iconDiv {
+          height: 137px;
+        }
+      }
+    }
   }
 }

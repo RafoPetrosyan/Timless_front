@@ -2,11 +2,35 @@
   width: 100%;
   background-color: #f1f1f1;
   .reviewsContent {
-    width: 1118px;
+    max-width: 1118px;
     margin: 0 auto;
     padding: 130px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  .reviews {
+    .reviewsContent {
+      margin: 0 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .reviews {
+    .reviewsContent {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 461px) {
+  .reviews {
+    .reviewsContent {
+      margin: 0 5px;
+    }
   }
 }

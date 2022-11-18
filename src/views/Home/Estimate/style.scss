@@ -95,6 +95,7 @@
     //min-height: 653px;
     //max-height: 808px;
     height: fit-content;
+    //width: 100%;
   }
   .ant-carousel {
     height: 100%;
@@ -125,5 +126,65 @@
 @media only screen and (max-width: 1024px) {
   .estimate {
     padding-top: 57px;
+    .carousel {
+      .carouselItem {
+        .informationDiv {
+          .title {
+            font-size: 30px;
+          }
+          .text {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 771px) {
+  .estimate {
+    .carousel {
+      .carouselItem {
+        .informationDiv {
+          top: 93px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 571px) {
+  .estimate {
+    .socialDiv {
+      .socialContent {
+        width: 318px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 461px) {
+  .estimate {
+    .carousel {
+      .carouselItem {
+        .informationDiv {
+          top: 3px;
+          .title {
+            letter-spacing: 0;
+            font-size: 22px;
+          }
+          .text {
+            font-size: 15px;
+          }
+          .estimateButton {
+            width: 271px;
+            height: 57px;
+            margin-top: 21px;
+            font-size: 21px;
+          }
+        }
+      }
+    }
+    .ant-carousel .slick-dots-bottom {
+      bottom: 228px;
+    }
   }
 }

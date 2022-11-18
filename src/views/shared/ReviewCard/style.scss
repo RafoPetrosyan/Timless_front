@@ -54,3 +54,69 @@
     }
   }
 }
+@media only screen and (max-width: 1175px) {
+  .reviewCard {
+    width: 467px;
+    .content {
+      margin-top: 25px;
+      margin-left: 13px;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .reviewCard {
+    width: 100%;
+    .content {
+      width: 90%;
+      margin-top: 33px;
+      margin-left: 38px;
+      .textContent {
+        margin-top: 14px;
+      }
+      .readMoreDiv {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .reviewCard {
+    .content {
+      margin-top: 15px;
+      margin-left: 15px;
+      .textContent {
+        .text {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+.ant-avatar-circle .ant-avatar-image .userAvatar {
+  width: 64px !important;
+  height: 64px !important;
+}
+
+@media only screen and (max-width: 471px) {
+  .reviewCard {
+    .content {
+      .topContent {
+        .avatar {
+          //.ant-avatar .ant-avatar-circle .ant-avatar-image .userAvatar {
+          //  width: 64px !important;
+          //  height: 64px !important;
+          //}
+        }
+        .nameDiv {
+          .name {
+            font-size: 19px;
+          }
+          .date {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

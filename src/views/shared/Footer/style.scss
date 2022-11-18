@@ -3,10 +3,10 @@
   background-color: #181818;
   display: flex;
   flex-direction: column;
+  padding: 67px 0 57px;
   .content {
-    margin: 67px auto 57px;
+    margin: 0 auto;
     width: 1178px;
-    height: 215px;
     display: flex;
     justify-content: space-between;
     .information {
@@ -33,64 +33,68 @@
         }
       }
     }
-    .menu {
-      width: 110px;
-      height: 100%;
-      .menuList {
-        list-style-type: none;
-        padding: 0;
-        .text {
-          color: #838383;
-          font-size: 19px;
-          margin-bottom: 10px;
-        }
-        .text:hover {
-          color: #AF7822;
-          cursor: pointer;
-        }
-      }
-    }
-    .services {
-      width: 221px;
-      height: 100%;
-      .serviceName {
-        color: #838383;
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
-      .serviceName:hover {
-        cursor: pointer;
-        color: #AF7822;
-      }
-      .list {
-        color: #838383;
-        list-style-type: none;
-        padding: 0;
-        .listItem {
-          display: flex;
-          align-items: center;
-          margin-bottom: 10px;
-          .circle {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: #838383;
-          }
-          .circle:hover {
-            cursor: pointer;
-            background-color: #AF7822;
-          }
+    .menuItems {
+      display: flex;
+      .menu {
+        width: 110px;
+        height: 100%;
+        .menuList {
+          list-style-type: none;
+          padding: 0;
           .text {
-            margin-left: 5px;
-            font-size: 17px;
+            color: #838383;
+            font-size: 19px;
+            margin-bottom: 10px;
           }
           .text:hover {
-            cursor: pointer;
             color: #AF7822;
-            .listItem {
-              .circle {
-                cursor: pointer;
-                background-color: #AF7822;
+            cursor: pointer;
+          }
+        }
+      }
+      .services {
+        width: 221px;
+        height: 100%;
+        margin-left: 20px;
+        .serviceName {
+          color: #838383;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        .serviceName:hover {
+          cursor: pointer;
+          color: #AF7822;
+        }
+        .list {
+          color: #838383;
+          list-style-type: none;
+          padding: 0;
+          .listItem {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .circle {
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #838383;
+            }
+            .circle:hover {
+              cursor: pointer;
+              background-color: #AF7822;
+            }
+            .text {
+              margin-left: 5px;
+              font-size: 17px;
+            }
+            .text:hover {
+              cursor: pointer;
+              color: #AF7822;
+              .listItem {
+                .circle {
+                  cursor: pointer;
+                  background-color: #AF7822;
+                }
               }
             }
           }
@@ -128,6 +132,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 10px;
         .text {
           color: #838383;
           margin: 0;
@@ -137,6 +142,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin-top: 25px;
         .text {
           color: #838383;
         }
@@ -161,6 +167,69 @@
     .text:hover {
       color: #AF7822;
       cursor: pointer;
+    }
+  }
+}
+@media only screen and (max-width: 1178px) {
+  .footer {
+    .content {
+      width: 1024px;
+      .information {
+        .list {
+          .listItem {
+            .text {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .socialContent {
+        .bottom {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .footer {
+    .content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      width: 70%;
+      .information {
+        width: 298px;
+      }
+      .menuItems {
+        margin-top: 50px;
+        .menu {
+          .menuList {
+            .text {
+              font-size: 15px;
+            }
+          }
+        }
+        .services {
+          .serviceName {
+            font-size: 12px;
+          }
+          .list {
+            .listItem {
+              .text {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+      .socialContent {
+        margin-top: 20px;
+        width: 255px;
+        .bottom {
+          width: 280px;
+        }
+      }
     }
   }
 }

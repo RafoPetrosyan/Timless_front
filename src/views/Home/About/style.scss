@@ -2,8 +2,8 @@
   width: 100%;
   background-color: #f1f1f1;
   .content {
-    width: 1118px;
-    height: 452px;
+    padding: 100px 0;
+    max-width: 1118px;
     margin: 0 auto;
     border-top: 1px solid #b9b3b3;
     display: flex;
@@ -14,5 +14,16 @@
       display: flex;
       justify-content: space-between;
    }
+  }
+}
+@media only screen and (max-width: 761px) {
+  .about {
+    .content {
+      padding: 70px 0;
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 }

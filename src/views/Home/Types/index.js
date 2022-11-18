@@ -6,12 +6,12 @@ import plumging from 'assets/images/plumging.jpg';
 import bathroom from 'assets/images/bathroom.png';
 
 import useContainer from "./hook";
-import 'antd/dist/antd.min.css';
-import "./style.scss";
 import Roofing from "assets/svg/Roofing";
 import Plumbing from "assets/svg/Plumbing";
 import BathRoom from "assets/svg/BathRoom";
 import Kitchen from "assets/svg/Kitchen";
+import 'antd/dist/antd.min.css';
+import "./style.scss";
 
 const Types = () => {
     const { socialIcons } = useContainer();

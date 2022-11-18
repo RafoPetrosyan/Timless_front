@@ -13,10 +13,10 @@ const Home = () => (
         <Header />
         <Estimate />
         <Introduction />
-        {/*<Types />*/}
-        {/*<Reviews />*/}
-        {/*<About />*/}
-        {/*<Footer />*/}
+        <Types />
+        <Reviews />
+        <About />
+        <Footer />
     </div>
 );
 

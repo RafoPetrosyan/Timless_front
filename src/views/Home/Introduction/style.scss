@@ -1,14 +1,14 @@
 .introduction {
   width: 100%;
-  height: 1060px;
   background-color: #f1f1f1;
   position: relative;
   .typesDiv {
     position: absolute;
-    width: 1118px;
+    max-width: 1118px;
     background-color: white;
     left: 0;
-    bottom: 900px;
+    top: -95px;
+    //bottom: 900px;
     right: 0;
     margin: auto;
     z-index: 1;
@@ -35,11 +35,12 @@
     }
   }
   .contentBackRound {
+    padding-top: 200px;
+    padding-bottom: 100px;
     width: 100%;
-    height: 820px;
-    position: absolute;
+    //position: absolute;
     z-index: 1;
-    bottom: 0;
+    //bottom: 0;
     background-image: url("../../../assets/images/bg.png");
     background-position: center;
     background-size: 100% 100%;
@@ -51,7 +52,7 @@
       position: absolute;
       width: 450px;
       z-index: 2;
-      top: 0;
+      //top: 0;
       left: 0;
       right: 0;
       margin: auto;
@@ -62,9 +63,8 @@
       }
     }
     .content {
-      margin: 30px auto;
-      width: 1141px;
-      height: 697px;
+      margin: 30px auto 0;
+      max-width: 1141px;
       border: 2px solid #ebdec3;
       .text {
         margin-top: 30px;
@@ -75,7 +75,6 @@
       }
       .offerDiv {
         width: 700px;
-        height: 160px;
         margin: 80px auto;
         .title {
           font-size: 20px;
@@ -86,7 +85,7 @@
         }
         .offers {
           width: 100%;
-          height: 82px;
+          //height: 82px;
           display: flex;
           justify-content: space-between;
           .offersUl {
@@ -117,14 +116,29 @@
 @media only screen and (max-width: 1126px) {
   .introduction {
     .typesDiv {
-      width: 960px;
+      max-width: 950px;
+    }
+    .contentBackRound {
+      .content {
+        width: 95%;
+      }
     }
   }
 }
 @media only screen and (max-width: 960px) {
   .introduction {
     .typesDiv {
-      width: 760px;
+      max-width: 760px;
+      .typesItem {
+        width: 190px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 824px) {
+  .introduction {
+    .typesDiv {
+      max-width: 760px;
       .typesItem {
         width: 190px;
       }
@@ -133,13 +147,38 @@
 }
 @media only screen and (max-width: 761px) {
   .introduction {
+    .contentBackRound {
+      padding-top: 270px;
+      .titleDiv {
+        .title {
+          font-size: 39px;
+        }
+      }
+      .content {
+        .offerDiv {
+          width: 100%;
+          .title {
+            margin-left: 30px;
+            text-align: left;
+          }
+          .offers {
+            flex-direction: column;
+            .offersUl {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
     .typesDiv {
       width: 414px;
       flex-wrap: wrap;
       padding: 20px 0;
+      justify-content: center;
       .typesItem {
         width: 190px;
-        margin: 8px;
+        padding: 6px;
+        //margin: 8px;
       }
       .typesItem:nth-child(-n+1) {
         border-right: 1px solid #e0e0e0;
@@ -157,6 +196,93 @@
       .typesItem:nth-child(4) {
         border-left: 1px solid #e0e0e0;
         border-right: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 641px) {
+  .introduction {
+    .contentBackRound {
+      .titleDiv {
+        width: 368px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 461px) {
+  .introduction {
+    .typesDiv {
+      top: -178px;
+      width: 295px;
+      .typesItem {
+        width: 135px;
+        .name {
+          font-size: 18px;
+        }
+      }
+    }
+    .contentBackRound {
+      padding-top: 168px;
+      .titleDiv {
+        width: 300px;
+        .title {
+          line-height: 1.775;
+          font-size: 30px;
+        }
+      }
+      .content {
+        .text {
+          font-size: 16px;
+        }
+        .offerDiv {
+          .title {
+            font-size: 17px;
+            line-height: 25px;
+          }
+          .offers {
+            .offersUl {
+              .item {
+                span {
+                  font-size: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 461px) {
+  .introduction {
+    .contentBackRound {
+      .titleDiv {
+        width: 264px;
+        .title {
+          padding: 0;
+          margin: 0;
+          font-size: 26px;
+        }
+      }
+      .content {
+        .text {
+          font-size: 14px;
+        }
+        .offerDiv {
+          .title {
+            font-size: 17px;
+            line-height: 25px;
+          }
+          .offers {
+            .offersUl {
+              .item {
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
