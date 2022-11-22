@@ -6,7 +6,9 @@
   box-shadow: none;
   transform-origin: 0 0;
   top: 58px;
-  width: 90%;
+  right: 20px;
+  display: flex;
+  justify-content: end;
   .ant-menu-title-content {
     font-size: 22px;
   }
